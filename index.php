@@ -1,7 +1,10 @@
 <?php
-  include "connect.php";
 	include "navbar.php";
-
+  session_start();
+  if (!isset($_SESSION[u_id])) {
+    header("Location: ./login.php");
+    exit;
+  }
 //opbouwen SQL statement
 //$sql = 'SELECT * FROM ';
 //$stmt = $conn->prepare($sql);
@@ -30,8 +33,6 @@
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-    <img src="placeholder">
   </body>
 </html>
  
