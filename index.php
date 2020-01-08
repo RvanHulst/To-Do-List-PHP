@@ -1,5 +1,6 @@
 <?php
 	include "navbar.php";
+
   session_start();
   if (!isset($_SESSION[u_id])) {
     header("Location: ./login.php");
@@ -24,9 +25,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
     <meta charset="utf-8">
+  
     
   </head>
   <body>
+
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

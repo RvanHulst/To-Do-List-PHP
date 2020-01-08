@@ -1,3 +1,9 @@
 #logout > button{
 margin-left: 73vw;
 }
+.test{
+	width: auto;
+	height: 93%;
+	background-image: img/blauwverf.jpg;
+	background-size: auto;
+}

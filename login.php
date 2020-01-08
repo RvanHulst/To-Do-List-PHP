@@ -15,11 +15,12 @@
 
 </head>
 <body>
+    <div class="test">
 <header>
            <a href="login.php"><i class="fas fa-sign-in-alt"></i></a>
     </nav>
 </header>
-
+    
 <main>
 
     <div class="wrapper">
@@ -45,6 +46,7 @@
                 </div>
             </div>
     </div>
+</div>
 </main>
 </body>
 </html>
