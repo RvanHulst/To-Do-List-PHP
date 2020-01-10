@@ -6,14 +6,6 @@
     header("Location: ./login.php");
     exit;
   }
-//opbouwen SQL statement
-//$sql = 'SELECT * FROM ';
-//$stmt = $conn->prepare($sql);
-//$stmt->execute();
-//$result = $stmt->fetchAll();
-
-//var_dump($result);
-
 ?>
 <!DOCTYPE html>
 <html lang="nl" dir="ltr">

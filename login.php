@@ -24,27 +24,26 @@
 <main>
 
     <div class="wrapper">
-
-            <div class="main-wrapper">
-                <!--            <ul>-->
-                <!--                <li><a href="login.php">Home</a></li>-->
-                <!--            </ul>-->
-                <div class="nav-login">
+        <div class="nav-login">
                     <?php
                     if (isset($_SESSION['u_id'])) {
                         echo '';
                     } else {
                         echo '<form action="includes/login.inc.php" method="POST">
                                 <input type="text" name="uid" placeholder="Username/e-mail">
+                                <br>
                                 <input type="password" name="pwd" placeholder="Password">
-                                <button type="submit" name="submit">Login</button>
-                                <a class="signup" href="signup.php">Sign up</a>
+                                <br>
+                                <input class="submit" type="submit" value="Submit">
+                                <input class="submit" type="submit" value="Sign Up">
+
                             </form>
                             ';
                     }
                     ?>
                 </div>
-            </div>
+
+
     </div>
 </div>
 </main>
