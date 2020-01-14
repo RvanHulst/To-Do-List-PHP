@@ -1,5 +1,6 @@
 <?php
     include "navbar.php";
+    include "./includes/dbconn.php";
     session_start()
 
 ?>
@@ -25,22 +26,19 @@
 
     <div class="wrapper">
         <div class="nav-login">
-                    <?php
-                    if (isset($_SESSION['u_id'])) {
-                        echo '';
-                    } else {
-                        echo '<form action="includes/login.inc.php" method="POST">
-                                <input type="text" name="uid" placeholder="Username/e-mail">
-                                <br>
-                                <input type="password" name="pwd" placeholder="Password">
-                                <br>
-                                <input class="submit" type="submit" value="Submit">
-                                <input class="submit" type="submit" value="Sign Up">
-
-                            </form>
-                            ';
-                    }
-                    ?>
+<?php
+    if (!isset($_SESSION['u_id'])) { ?>
+            <form action="includes/login.inc.php" method="POST">
+                <input type="text" name="uid" placeholder="Username/e-mail">
+                <br>
+                <input type="password" name="pwd" placeholder="Password">
+                <br>
+                <div class="container">
+                 <input class="submit" name="submit" type="submit" value="Submit" />
+                 <input href="" class="submit" name="submit" type="submit" value="Sign Up" />
+                </div>
+            </form>
+<?php } ?>
                 </div>
 
 
@@ -128,9 +126,7 @@
 
 
 
-
-
-<main>
+<!-- <main>
 
     <section class="main-container">
         <div class="main-wrapper">
@@ -143,3 +139,4 @@
         </div>
     </section>
 </main>
+ -->
