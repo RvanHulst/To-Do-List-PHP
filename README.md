@@ -15,7 +15,7 @@ opdracht begonnen , had wel even wat moeite met een database op te zetten omdat 
                                 <input type="text" name="uid" placeholder="Username/e-mail">
                                 <br>
                                 <input type="password" name="pwd" placeholder="Password">
-                                <br
+                                <br>
                                 <button type="submit" name="submit">Login</button>
                                 <a class="signup" href="signup.php"></a>
                             </form>

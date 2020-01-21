@@ -35,8 +35,10 @@
                 <br>
                 <div class="container">
                  <input class="submit" name="submit" type="submit" value="Submit" />
-                 <input href="" class="submit" name="submit" type="submit" value="Sign Up" />
                 </div>
+            </form>
+             <form action="signup.php" method="POST">
+                <input class="submit" name="submit" type="submit" value="Submit" />
             </form>
 <?php } ?>
                 </div>

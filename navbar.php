@@ -14,6 +14,9 @@
       <li class="nav-item active">
         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
+       <li class="nav-item active">
+          <a class="nav-link" href="overview.php">Overview <span class="sr-only">(current)</span></a>
+       </li>
       <?php 
 if (!isset($_SESSION['u_id'])) {
             echo '<li class="nav-item active">
@@ -33,9 +36,8 @@ if (!isset($_SESSION['u_id'])) {
 
         if (isset($_SESSION['u_id'])) {
             echo '<form id="logout" action="includes/logout.inc.php" method="POST">
-                                <button type="submit" name="submit">logout</button>
-                            </form> ';
-
+                    <button type="submit" name="submit">logout</button>
+                  </form>';
         } else {
             echo '';
 

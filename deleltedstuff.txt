@@ -1,0 +1,42 @@
+//
+//    include "includes/dbconn.php";
+//
+//
+//  function insert_data()
+//  {
+//    $name = $_POST['name'];
+//    $description = $_POST['description'];
+//    $user_id = get_user_id();
+//
+//    $conn = connectDB();
+//    $query = $conn->prepare('INSERT INTO tasks (name, description, user_id) values(:name, :description, :user_id)');
+//    $query->bindParam(':name', $name);
+//    $query->bindParam(':description', $description);
+//    $query->bindParam(':user_id', $user_id);
+//
+//    $query->execute();
+//  }
+//
+//function get_user_id()
+//  {
+//    $conn = new mysqli($servername, $dbusername, $dbpwd);
+//    $query = $conn->prepare('SELECT user_id FROM users');
+//    $query->execute();
+//    $result = $query->fetchAll();
+//
+//    return $result;
+//  }//
+
+
+
+
+db connect
+
+//<?php 
+//$servername = "localhost";
+//$dbusername = "root";
+//$dbpwd = "mysql";
+//$dbname = "todolist";
+//
+//$conn = mysqli_connect($servername, $dbusername, $dbpwd);
+// ?>
