@@ -1,29 +1,28 @@
-body{ 
-	
+body{}
 
-}
 #logout > button{
-margin-left: 73vw;
+	margin-left: 73vw;
 }
+
 .wrapper{
-	
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	
 	background-image: url(./img/background.jpg);
 }
+
 .test{
 	width: auto;
 	height: 100px;
-
 }
+
 /*.submit{
 	width: 1000px;
 }*/
+
 .nav-login {
 	width: 450px;
 	height: 500px;
@@ -34,6 +33,7 @@ margin-left: 73vw;
 	border: 3px solid black;
 	background-color: rgba(0, 0, 0, 0.3);
 }
+
 .nav-login > form > input {
 	margin-top: 1vh;
 	width: 350px;
@@ -42,21 +42,23 @@ margin-left: 73vw;
 	font-size: 1.2em;
 	line-height: 40px;
 	border: none;
-
-	}
-	.nav-login > form > .submit {
-		width: 200px;
-		height: 40px;
-		border: none;
-		margin-top: 20px;
-	}
-.submit {
-display:grid;
-grid-template-columns: 50% 50%;
 }
+
+.nav-login > form > .submit {
+	width: 200px;
+	height: 40px;
+	border: none;
+	margin-top: 20px;
+}
+
+.submit {
+	display:grid;
+	grid-template-columns: 50% 50%;
+}
+
 .container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin-top: 10px;
-  margin-left: 10px
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-top: 10px;
+	margin-left: 10px
 }
